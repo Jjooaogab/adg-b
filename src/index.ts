@@ -1,6 +1,6 @@
 import express from 'express';
 import cors from 'cors'
-import mongoose from 'mongoose';
+import mongoose, { ConnectOptions } from 'mongoose';
 import ProdutoRoutes from './routes/produtoRoutes';
 import pedidoRoutes from './routes/pedidoRoutes';
 import * as dv from 'dotenv'
@@ -16,7 +16,7 @@ app.use(express.json());
 
 async function connectToMongoDB() {
   try {
-    await mongoose.connect(String(uri));
+    await mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true, ...Option } as ConnectOptions);;
     console.log(uri)
 
     console.log('Conexão com o MongoDB estabelecida!');
