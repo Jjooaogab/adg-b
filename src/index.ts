@@ -16,7 +16,7 @@ app.use(express.json());
 
 async function connectToMongoDB() {
   try {
-    await mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true } as ConnectOptions);;
+    await mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverSelectionTimeoutMS: 5000 } as ConnectOptions);;
     console.log(uri)
 
     console.log('Conexão com o MongoDB estabelecida!');
