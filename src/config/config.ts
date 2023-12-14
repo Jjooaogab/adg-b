@@ -1,0 +1,2 @@
+export const secret = 'eyJhbGciOiJIUzUxMiJ9.eyJSb2xlIjoiQWRtaW4iLCJJc3N1ZXIiOiJJc3N1ZXIiLCJVc2VybmFtZSI6IkphdmFJblVzZSIsImV4cCI6MTY5OTIyNzc5NSwiaWF0IjoxNjk5MjI3Nzk1fQ.XoObuk3nFS262tzTvv3tP6bYed4lnKqqjzoknBjVeyGKpe9aMr36vMt9J3AdKRAy1v_w9i-9HTIlMxAsf0vPHQ';
+export const mongoURI = `mongodb+srv://jjooaogab:D7Mfp3NCTTisAPRH@cluster0.96dqqki.mongodb.net/?retryWrites=true&w=majority`;
