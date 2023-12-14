@@ -7,9 +7,9 @@
     "node": "18"
   },
   "scripts": {
-    "dev": "nodemon src/server.ts",
+    "dev": "nodemon src/index.ts",
     "build": "npm i; tsc",
-    "start": "node dist/server.js",
+    "start": "node dist/index.js",
     "ts.check": "tsc --project tsconfig.json",
     "add-build": "git add dist"
   },
